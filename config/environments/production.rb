@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # This will automagically create a token and assign it to your secret_key_base. Push to Heroku and you’re all set.
+  config.secret_key_base = ENV['SECRET_KEY_BASE']
 end
