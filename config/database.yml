@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: conjur_web_production
-  username: conjur_web
+  database: db
+  username: root
   password: <%= ENV['CONJUR_WEB_DATABASE_PASSWORD'] %>

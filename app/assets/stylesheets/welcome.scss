@@ -1,3 +1,74 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+  background-image: url('blue_filter_splash.png');
+  color: white;
+  height:100vh;
+  background-size: cover;
+  h1 {
+    font-size: 80px;
+  }
+}
+
+.vertical-center {
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;    /* vertical alignment of the inline element */
+  height:100vh;
+}
+
+.vertical-center > .container {
+  height:50vh;
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  /* reset the font property */
+  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.featurette {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.feat-alt {
+  background-color: #ebebeb;
+}
+
+#about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #4da1ff;
+  color: white;
+  h1 {
+    padding-bottom: 30px;
+  }
+}
+
+#contact-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  p {
+    &:first-child {
+      padding-bottom: 20px;
+    }
+    color: #4da1ff;
+  }
+  h2 {
+    color: gray;
+  }
+  img {
+    height: 300px;
+  }
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ebebeb;
+}
