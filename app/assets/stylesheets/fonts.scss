@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Futura Koyu';
+  src: font-url('futura_koyu.eot');
+  src: font-url('futura_koyu.eot?#iefix') format('embedded-opentype'),
+    font-url('futura_koyu.woff2') format('woff2'),
+    font-url('futura_koyu.woff') format('woff'),
+    font-url('futura_koyu.ttf') format('truetype'),
+    font-url('futura_koyu.svg#futurakoyu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Oblique';
+  src: url('futura_oblique.eot');
+  src: url('futura_oblique.eot?#iefix') format('embedded-opentype'),
+    url('futura_oblique.woff2') format('woff2'),
+    url('futura_oblique.woff') format('woff'),
+    url('futura_oblique.ttf') format('truetype'),
+    url('futura_oblique.svg#futura_oblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

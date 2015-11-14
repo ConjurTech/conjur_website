@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
+@import "bootstrap_overrides";
 @import "bootstrap";
-@import "welcome";
-@import "navbar";
+@import "fonts";
 @import "globals";
+@import "navbar";
+//@import "welcome";
+@import "new";

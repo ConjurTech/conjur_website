@@ -1,9 +1,10 @@
-.divider {
+.btn-clear {
+  background: transparent;
   color: white;
-  background-color: white;
-  height: 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border-color: white;
+  &:hover, &:focus, &:active {
+    color: white;
+    background: rgba(0,0,0,0.5);
+    border-color: white;
+  }
 }
