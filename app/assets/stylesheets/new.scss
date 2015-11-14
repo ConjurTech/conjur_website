@@ -28,30 +28,87 @@ $navbar-height: 50;
   }
 }
 
-#process {
+#process-section {
   padding: 90px 0;
   .process-step {
     @extend .col-xs-12;
     @extend .col-md-4;
     text-align: center;
+    margin-bottom: 50px;
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 0;
+    }
     .process-image {
       position: relative;
       display: inline;
-      &.with-line:before {
-        content: " ";
-        display: inline-block;
-        position: absolute;
-        width: 200px;
-        height: 17px;
-        top: 50%;
-        left: -200px;
-        background: image-url('arrow_connecting.png') right center;
+      @media (min-width: $screen-md-min) {
+        &.with-line:before {
+          content: " ";
+          display: inline-block;
+          position: absolute;
+          width: 200px;
+          height: 17px;
+          top: 50%;
+          left: -200px;
+          background: image-url('arrow_connecting.png') right center;
+        }
       }
       img {
         background: white;
         position: relative;
         z-index: 2;
       }
+    }
+    .process-text {
+      h2 {
+        font-family: 'Futura Oblique', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        color: #232323;
+      }
+    }
+  }
+}
+
+#upgrade-cta-section {
+  padding: 70px 0;
+  color: white;
+  background: #9ad3de;
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    margin-bottom: 25px;
+    @media (min-width: $screen-md-min) {
+      font-size: 42px;
+    }
+  }
+  p {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+}
+
+#featurette-section {
+  .featurette {
+    padding: 100px 0;
+    &.primary {
+      .featurette-image { @extend .col-sm-push-8; }
+      .featurette-text { @extend .col-sm-pull-4; }
+    }
+    &.alternate {
+      background: #f5f6f6;
+    }
+    .featurette-image {
+      @extend .col-xs-12;
+      @extend .col-sm-4;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+    }
+    .featurette-text {
+      @extend .col-xs-12;
+      @extend .col-sm-8;
     }
   }
 }
