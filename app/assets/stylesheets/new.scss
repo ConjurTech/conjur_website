@@ -1,9 +1,28 @@
-$navbar-height: 50;
+.navbar {
+ .navbar-brand {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 36px;
+  padding-left: 50px;
+ }
+ .nav > li > a {
+   font-size: 20px;
+   padding-right: 40px;
+ }
+}
+
+
 
 #home-jumbotron {
-  background: image-url('bg_splash.png') 0 $navbar-height*-2px;
+  background:
+    linear-gradient(
+      rgba(114, 187, 191, 0.95),
+      rgba(114, 187, 191, 0.95)
+    ),
+    image-url('bg_splash_clean.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: $navbar-height;
   height: 800px;
   text-align: center;
   color: white;
