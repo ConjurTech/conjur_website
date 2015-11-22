@@ -14,10 +14,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-conjur-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Works</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="smoothscroll" href="#process">About</a></li>
+        <li><a class="smoothscroll" href="#">Our Works</a></li>
+        <li><a class="smoothscroll" href="#team">Our Team</a></li>
+        <li><a class="smoothscroll" href="#">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -28,15 +28,14 @@
     <h1>Your Custom Software House</h1>
     <p>
       <span data-sr="enter bottom, hustle 40px, over 0.6s">The <strong>Software</strong> you Like .</span>
-      <span data-sr="enter bottom, hustle 40px, over 0.6s, wait 0.6s">The <strong>Technology</strong> you Deserve .</span>
-      <span data-sr="enter bottom, hustle 40px, over 0.6s, wait 1.2s">The <strong>Automation</strong> you Need </span>
+      <span data-sr="enter bottom, hustle 40px, over 0.6s, wait 0.5s">The <strong>Technology</strong> you Deserve .</span>
+      <span data-sr="enter bottom, hustle 40px, over 0.6s, wait 1.0s">The <strong>Automation</strong> you Need </span>
     </p>
     <p><a class="btn btn-lg btn-clear smoothscroll" href="#process" role="button">Learn more</a></p>
   </div>
 </div>
 
-<div class="container">
-  <a id="process"></a>
+<div class="container" id="process">
   <div class="row" id="process-section">
     <div class="process-step" data-sr="enter left, hustle 70px">
       <div class="process-image">
@@ -82,12 +81,15 @@
         <div class="featurette-text" data-sr="enter bottom, hustle 50px">
           <h1>Automate Your Process</h1>
           <p class="lead">Software that runs your business</p>
-          <p>Whether the task be menial or critical, automating all
+          <p>
+            Whether the task be menial or critical, automating all
             or a portion of your business process means gained
-            efficiencies. That means <strong>BIG</strong> financial savings! Eliminate
-            bottlenecks and free your workforce so they can spend
-            more time concentrating on taking your company to the
-            next level.</p>
+            efficiencies. That means <strong>BIG</strong> financial savings!
+          </p>
+          <p>
+            Eliminate bottlenecks and free your workforce so they can spend
+            more time concentrating on taking your company to the next level.
+          </p>
         </div>
       </div>
     </div>
@@ -101,11 +103,15 @@
         <div class="featurette-text" data-sr="enter right, hustle 50px, over 1.2s">
           <h1>Integrated Solutions</h1>
           <p class="lead">See for yourself</p>
-          <p>We can help you create almost any sort of customized software you can think of,
-            from <strong>CRM</strong> & <strong>HRM</strong> systems to <strong>e-commerce platforms</strong>.
+          <p>
+            We can help you create almost any sort of customized software you can think of,
+            from <strong>CRM & HRM systems</strong> to <strong>e-commerce platforms</strong>.
+          </p>
+          <p>
             Transform your business from a paper based system and harness your new
             digitally powered productivity, or prototype and create your
-            new web application with us.</p>
+            new web application with us.
+          </p>
         </div>
       </div>
     </div>
@@ -119,10 +125,42 @@
         <div class="featurette-text" data-sr="enter top, hustle 50px, over 1.2s">
           <h1>Fully Responsive Webapps</h1>
           <p class="lead">From desktop to mobile</p>
-          <p>We believe in building webapps that can be used
+          <p>
+            We believe in building webapps that can be used
             in any screen size, from your laptop to your favourite
-            smart phone.</p>
+            smart phone.
+          </p>
+          <p>
+            Ensure your site has top-notch <strong>SEO</strong> with mobile optimized
+            applications, superb loading speeds and industry best practices from day one with us.
+          </p>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about-us-section">
+  <div class="container text-center" id="team">
+    <h1>Our Team</h1>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <%= image_tag 'henry.png', class: 'img-responsive img-circle center-block' %>
+        <p class="team-member-name">Henry Chua</p>
+        <p class="team-member-role">IT Consultant, Software Engineer</p>
+        <p class="team-member-quote">"I love solving other people's problems"</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <%= image_tag 'ivan.png', class: 'img-responsive img-circle center-block' %>
+        <p class="team-member-name">Ivan Poon</p>
+        <p class="team-member-role">Technical Lead, Software Engineer</p>
+        <p class="team-member-quote">"Nothing is too difficult"</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <%= image_tag 'pingchiang.png', class: 'img-responsive img-circle center-block' %>
+        <p class="team-member-name">Sng Ping Chiang</p>
+        <p class="team-member-role">UX Designer, Software Engineer</p>
+        <p class="team-member-quote">"I love building software"</p>
       </div>
     </div>
   </div>
