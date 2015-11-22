@@ -3,15 +3,15 @@
   <div class="container-fluid">
 
     <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Conjur</a>
-        </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Conjur</a>
+    </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,7 +37,7 @@
 
 <div class="container">
   <div class="row" id="process-section">
-    <div class="process-step">
+    <div class="process-step" data-sr="wait 0.1s enter left, hustle 70px">
       <div class="process-image">
         <%= image_tag('icon_consult.png') %>
       </div>
@@ -45,7 +45,7 @@
         <h2>Consult Us</h2>
       </div>
     </div>
-    <div class="process-step">
+    <div class="process-step" data-sr="wait 0.5s, enter left, hustle 70px">
       <div class="process-image with-line">
         <%= image_tag('icon_develop.png') %>
       </div>
@@ -53,7 +53,7 @@
         <h2>We Develop</h2>
       </div>
     </div>
-    <div class="process-step">
+    <div class="process-step" data-sr="wait 1s, enter left, hustle 70px">
       <div class="process-image with-line">
         <%= image_tag('icon_results.png') %>
       </div>
@@ -75,10 +75,10 @@
   <div class="featurette primary">
     <div class="container">
       <div class="row">
-        <div class="featurette-image">
+        <div class="featurette-image" data-sr="scale 100%, over 1.2s">
           <%= image_tag 'icon_automate.png' %>
         </div>
-        <div class="featurette-text">
+        <div class="featurette-text" data-sr="enter bottom, hustle 50px">
           <h1>Automate Your Process</h1>
           <p class="lead">Software that runs your business</p>
           <p>Whether the task be menial or critical, automating all
@@ -94,10 +94,10 @@
   <div class="featurette alternate">
     <div class="container">
       <div class="row">
-        <div class="featurette-image">
+        <div class="featurette-image" data-sr="enter left, hustle 50px, over 1.2s">
           <%= image_tag 'icon_integrate.png' %>
         </div>
-        <div class="featurette-text">
+        <div class="featurette-text" data-sr="enter right, hustle 50px, over 1.2s">
           <h1>Integrated Solutions</h1>
           <p class="lead">See for yourself</p>
           <p>We can help you create almost any sort of customized software you can think of,
@@ -112,11 +112,11 @@
   <div class="featurette primary">
     <div class="container">
       <div class="row">
-        <div class="featurette-image">
+        <div class="featurette-image" data-sr="roll 360deg">
           <%= image_tag 'icon_responsive.png' %>
         </div>
-        <div class="featurette-text">
-          <h1>Fully Response Webapps</h1>
+        <div class="featurette-text" data-sr="enter top, hustle 50px, over 1.2s">
+          <h1>Fully Responsive Webapps</h1>
           <p class="lead">From dekstop to mobile</p>
           <p>We believe in building webapps that can be used
             in any screen size, from your laptop to your favourite
