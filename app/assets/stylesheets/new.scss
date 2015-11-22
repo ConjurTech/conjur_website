@@ -124,10 +124,15 @@
       img {
         max-width: 100%;
       }
+      &.with-perspective {
+        // See: https://github.com/jlmakes/scrollReveal.js/wiki/Tips#add-perspective-to-3d-rotations
+        perspective: 1000px;
+      }
     }
     .featurette-text {
       @extend .col-xs-12;
       @extend .col-sm-8;
+      font-size: 16px;
     }
   }
 }

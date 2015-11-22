@@ -7,8 +7,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="google-site-verification" content="TcsQVNaNlvb5ipcPReaZPNFVQlrGB4BgERuves5UCWE" />
+  <!-- See: https://github.com/jlmakes/scrollReveal.js/wiki/Tips#making-sure-your-elements-load-hidden -->
+  <style>[data-sr] { visibility: hidden; }</style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-conjur">
 
 <%= yield %>
 

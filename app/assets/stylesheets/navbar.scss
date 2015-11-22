@@ -1,12 +1,32 @@
-nav {
+#navbar-conjur {
+  color: #7d7d7d;
   background-color: white;
-  color: #999999;
+  border-bottom: 0;
+  transition: 0.25s;
   a {
-    color: #999999;
+    color: #7d7d7d;
+    transition: 0.25s;
   }
-
   img {
     position: relative;
     top: -32px;
+  }
+  .navbar-brand {
+    transition: 0.25s;
+  }
+
+  $navbar-shrink-height: 40px;
+  &.shrink {
+    min-height: $navbar-shrink-height;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    a {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+    .navbar-brand {
+      height: $navbar-shrink-height;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
