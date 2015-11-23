@@ -150,3 +150,37 @@
     font-style: italic;
   }
 }
+
+#contact-us-section {
+  padding: 70px 0;
+  background-image: image-url('bg_contact_us.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  input, textarea {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    border: 1px solid #aaa;
+    background: rgba(255, 255, 255, 0.5);
+    color: #232323;
+
+    &::-webkit-input-placeholder { color: #888; }
+    &:-moz-placeholder { color: #888; }
+    &::-moz-placeholder { color: #888; }
+    &:-ms-input-placeholder { color: #888; }
+  }
+  input {
+    height: 50px;
+  }
+  .btn-send {
+    font-weight: bold;
+    padding: 10px 24px;
+    background: #6dcfd4;
+    border: 0;
+  }
+}
