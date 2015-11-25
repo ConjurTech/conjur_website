@@ -17,8 +17,12 @@
     font-style: italic;
     font-weight: 800;
     font-size: 36px;
-    padding-left: 50px;
+    padding-left: 20px;
     transition: 0.25s;
+    img {
+      max-height: 45px;
+      margin-top: 18px;
+    }
   }
 
   $navbar-shrink-height: 40px;
@@ -31,8 +35,10 @@
     }
     .navbar-brand {
       height: $navbar-shrink-height;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      img {
+        max-height: 27px;
+        margin-top: 28px;
+      }
     }
   }
 }
