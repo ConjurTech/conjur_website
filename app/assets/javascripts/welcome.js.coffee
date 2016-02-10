@@ -1,4 +1,5 @@
 swal = require('sweetalert')
+scrollreveal = require('scrollreveal')
 
 $(window).scroll ->
   if $(document).scrollTop() > 50
@@ -7,6 +8,8 @@ $(window).scroll ->
     $('#navbar-conjur').removeClass 'shrink'
 
 $(document).on 'ready page:load', ->
+  window.sr = new scrollreveal()
+
   $('a.smoothscroll[href^="#"]').on 'click', (e) ->
     e.preventDefault()
 

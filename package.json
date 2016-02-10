@@ -4,10 +4,12 @@
     "browserify": "~> 13.0.0",
     "browserify-incremental": "~> 3.0.1",
     "coffeeify": "~> 0.6",
-    "sweetalert": "~> 1.1.3"
+    "sweetalert": "~> 1.1.3",
+    "scrollreveal": "~> 2.3.2"
   },
   "license": "MIT",
   "engines": {
     "node": ">= 0.10"
-  }
+  },
+  "private": true
 }

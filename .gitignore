@@ -23,3 +23,6 @@
 
 # Ignore npm libs
 /node_modules
+
+# Ignore server file
+conjur_web_development
