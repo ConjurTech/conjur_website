@@ -25,5 +25,7 @@ module ConjurWeb
 
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     config.assets.precompile += %w( scrollReveal.min.js )
+
+    config.browserify_rails.commandline_options = "-t coffeeify --extension=\".js.coffee\""
   end
 end

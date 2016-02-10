@@ -18,5 +18,8 @@
 # Ignore idea files
 .idea/
 
-#ignore .env file for dotenv gem if/when there is one
+# Ignore .env file for dotenv gem if/when there is one
 /.env
+
+# Ignore npm libs
+/node_modules

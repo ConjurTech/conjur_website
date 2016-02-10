@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
 
 # View gems
 gem 'bootstrap-sass', '~> 3.3.5'
-source 'https://rails-assets.org' do
-  gem 'rails-assets-sweetalert'
-end
+gem "browserify-rails"
 
 # Engine gems
 #gem 'sprockets-rails', require: 'sprockets/railtie'

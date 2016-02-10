@@ -1,3 +1,5 @@
+swal = require('sweetalert')
+
 $(window).scroll ->
   if $(document).scrollTop() > 50
     $('#navbar-conjur').addClass 'shrink'
