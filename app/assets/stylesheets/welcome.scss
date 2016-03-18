@@ -1,81 +1,187 @@
-.jumbotron {
-  background-image: url('blue_filter_splash.png');
-  color: white;
-  height:100vh;
+#home-jumbotron {
+  background:
+    linear-gradient(
+      rgba(114, 187, 191, 0.95),
+      rgba(114, 187, 191, 0.95)
+    ),
+    image-url('bg_splash_clean.jpg');
   background-size: cover;
-  h1 {
-    font-size: 80px;
-  }
-}
-
-.divider {
+  background-repeat: no-repeat;
+  height: calc(800px + #{$navbar-height});
+  text-align: center;
   color: white;
-  background-color: white;
-  height: 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.vertical-center {
-  text-align: center;  /* align the inline(-block) elements horizontally */
-  font: 0/0 a;         /* remove the gap between inline(-block) elements */
-}
-
-.vertical-center:before {    /* create a full-height inline block pseudo=element */
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;    /* vertical alignment of the inline element */
-  height:100vh;
-}
-
-.vertical-center > .container {
-  height:50vh;
-  display: inline-block;
-  vertical-align: middle;  /* vertical alignment of the inline element */
-  /* reset the font property */
-  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.featurette {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.feat-alt {
-  background-color: #ebebeb;
-}
-
-#about-us {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #4da1ff;
-  color: white;
-  h1 {
-    padding-bottom: 30px;
-  }
-}
-
-#contact-us {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  p {
-    &:first-child {
-      padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding: $navbar-height 0 0 0;
+  .jumbotron-contents {
+    align-self: center;
+    margin-top: 40px;
+    h1 {
+      text-transform: uppercase;
     }
-    color: #4da1ff;
-  }
-  h2 {
-    color: gray;
-  }
-  img {
-    height: 300px;
+    p {
+      font-weight: 300;
+      font-size: 25px;
+      margin-top: 10px;
+    }
+    .btn {
+      margin-top: 60px;
+      padding: 12px 22px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ebebeb;
+#process-section {
+  padding: 90px 0;
+  .process-step {
+    @extend .col-xs-12;
+    @extend .col-md-4;
+    text-align: center;
+    margin-bottom: 50px;
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 0;
+    }
+    .process-image {
+      position: relative;
+      display: inline;
+      @media (min-width: $screen-md-min) {
+        &.with-line:before {
+          content: " ";
+          display: inline-block;
+          position: absolute;
+          width: 200px;
+          height: 17px;
+          top: 50%;
+          left: -200px;
+          background: image-url('arrow_connecting.png') right center;
+        }
+      }
+      img {
+        background: white;
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .process-text {
+      h2 {
+        font-family: 'Futura Oblique', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        color: #232323;
+      }
+    }
+  }
+}
+
+#upgrade-cta-section {
+  padding: 70px 0;
+  color: white;
+  background: #9ad3de;
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    margin-bottom: 25px;
+    @media (min-width: $screen-md-min) {
+      font-size: 42px;
+    }
+  }
+  p {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+}
+
+#featurette-section {
+  .featurette {
+    padding: 100px 0;
+    &.primary {
+      .featurette-image { @extend .col-sm-push-8; }
+      .featurette-text { @extend .col-sm-pull-4; }
+    }
+    &.alternate {
+      background: #f5f6f6;
+    }
+    .featurette-image {
+      @extend .col-xs-12;
+      @extend .col-sm-4;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+      &.with-perspective {
+        // See: https://github.com/jlmakes/scrollReveal.js/wiki/Tips#add-perspective-to-3d-rotations
+        perspective: 1000px;
+      }
+    }
+    .featurette-text {
+      @extend .col-xs-12;
+      @extend .col-sm-8;
+      font-size: 16px;
+    }
+  }
+}
+
+#about-us-section {
+  background-color: #9ad3de;
+  color: white;
+  padding: 70px 0;
+  img {
+    height: 150px;
+    border: 6px solid #ebeff3;
+  }
+  .row {
+    margin-top: 60px;
+  }
+  .team-member-name {
+    font-weight: 600;
+    font-size: 21px;
+    margin: 10px 0 5px;
+  }
+  .team-member-role {
+    color: #0072bc;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .team-member-quote {
+    color: #232323;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+
+#contact-us-section {
+  padding: 70px 0;
+  background-image: image-url('bg_contact_us.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  input, textarea {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    border: 1px solid #aaa;
+    background: rgba(255, 255, 255, 0.5);
+    color: #232323;
+
+    &::-webkit-input-placeholder { color: #888; }
+    &:-moz-placeholder { color: #888; }
+    &::-moz-placeholder { color: #888; }
+    &:-ms-input-placeholder { color: #888; }
+  }
+  input {
+    height: 50px;
+  }
+  .btn-send {
+    font-weight: bold;
+    padding: 10px 24px;
+    background: #6dcfd4;
+    border: 0;
+  }
 }

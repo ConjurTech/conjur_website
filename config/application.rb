@@ -24,6 +24,8 @@ module ConjurWeb
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
-    config.assets.precompile += %w( scrollReveal.min.js )
+    config.assets.paths << Rails.root.join('node_modules', 'sweetalert', 'dist')
+
+    config.browserify_rails.commandline_options = "-t coffeeify --extension=\".js.coffee\""
   end
 end

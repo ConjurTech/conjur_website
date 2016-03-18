@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: 'Futura Oblique';
-  src: url('futura_oblique.eot');
-  src: url('futura_oblique.eot?#iefix') format('embedded-opentype'),
-    url('futura_oblique.woff2') format('woff2'),
-    url('futura_oblique.woff') format('woff'),
-    url('futura_oblique.ttf') format('truetype'),
-    url('futura_oblique.svg#futura_oblique') format('svg');
+  src: font-url('futura_oblique.eot');
+  src: font-url('futura_oblique.eot?#iefix') format('embedded-opentype'),
+    font-url('futura_oblique.woff2') format('woff2'),
+    font-url('futura_oblique.woff') format('woff'),
+    font-url('futura_oblique.ttf') format('truetype'),
+    font-url('futura_oblique.svg#futura_oblique') format('svg');
   font-weight: normal;
   font-style: normal;
 }

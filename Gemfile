@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
 
 # View gems
 gem 'bootstrap-sass', '~> 3.3.5'
+gem "browserify-rails"
 
 # Engine gems
 #gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'rails_12factor', group: :production
+gem 'slack-notifier'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

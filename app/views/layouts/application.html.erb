@@ -6,9 +6,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <meta name="google-site-verification" content="TcsQVNaNlvb5ipcPReaZPNFVQlrGB4BgERuves5UCWE" />
   <!-- See: https://github.com/jlmakes/scrollReveal.js/wiki/Tips#making-sure-your-elements-load-hidden -->
   <style>[data-sr] { visibility: hidden; }</style>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70608575-1', 'auto');
+      ga('send', 'pageview');
+  </script>
   <!--Start of Zopim Live Chat Script-->
   <script type="text/javascript">
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -23,7 +31,5 @@
 
 <%= yield %>
 
-<%= javascript_include_tag "scrollReveal.min.js" %>
-<script>window.sr = new scrollReveal();</script>
 </body>
 </html>

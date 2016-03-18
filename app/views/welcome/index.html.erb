@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Conjur</a>
+      <a class="navbar-brand" href="#"><%= image_tag 'logo_conjur.png', alt: 'Conjur' %></a> <!-- adjusted_text-small variant -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,7 +17,7 @@
         <li><a class="smoothscroll" href="#process">About</a></li>
         <li><a class="smoothscroll" href="#">Our Works</a></li>
         <li><a class="smoothscroll" href="#team">Our Team</a></li>
-        <li><a class="smoothscroll" href="#">Contact</a></li>
+        <li><a class="smoothscroll" href="#contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -145,23 +145,50 @@
     <h1>Our Team</h1>
     <div class="row">
       <div class="col-xs-12 col-md-4">
-        <%= image_tag 'henry.png', class: 'img-responsive img-circle center-block' %>
+        <%= image_tag 'profile_henry.png', class: 'img-responsive img-circle center-block' %>
         <p class="team-member-name">Henry Chua</p>
         <p class="team-member-role">IT Consultant, Software Engineer</p>
         <p class="team-member-quote">"I love solving other people's problems"</p>
       </div>
       <div class="col-xs-12 col-md-4">
-        <%= image_tag 'ivan.png', class: 'img-responsive img-circle center-block' %>
+        <%= image_tag 'profile_ivan.png', class: 'img-responsive img-circle center-block' %>
         <p class="team-member-name">Ivan Poon</p>
         <p class="team-member-role">Technical Lead, Software Engineer</p>
         <p class="team-member-quote">"Nothing is too difficult"</p>
       </div>
       <div class="col-xs-12 col-md-4">
-        <%= image_tag 'pingchiang.png', class: 'img-responsive img-circle center-block' %>
+        <%= image_tag 'profile_pingchiang.png', class: 'img-responsive img-circle center-block' %>
         <p class="team-member-name">Sng Ping Chiang</p>
         <p class="team-member-role">UX Designer, Software Engineer</p>
         <p class="team-member-quote">"I love building software"</p>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="contact-us-section">
+  <div class="container text-center" id="contact">
+    <h1>Get In Touch</h1>
+    <%= form_tag '/contact', remote: true, id: 'contact_form' do %>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <input name="name" type="text" class="form-control" id="name-input" placeholder="Name" required>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <input name="email" type="email" class="form-control" id="email-input" placeholder="Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <textarea name="message" class="form-control" id="message-input" rows="6"
+                    placeholder="Leave us a message and we'll get back to you within one working day." required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-lg btn-primary btn-send pull-right">SEND</button>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
