@@ -123,6 +123,19 @@
   }
 }
 
+#portfolio-section {
+  background-color: #f5f6f6;
+  color: #9ad3de;
+  padding: 70px 0;
+  img {
+    height: 150px;
+    border: 6px solid #ebeff3;
+  }
+  .row {
+    margin-top: 60px;
+  }
+}
+
 #about-us-section {
   background-color: #9ad3de;
   color: white;
@@ -185,3 +198,84 @@
     border: 0;
   }
 }
+
+#portfolio-page {
+  position: relative;
+  background-color: #f5f6f6;
+  color: #9ad3de;
+  #portfolio-nav-header {
+    background-color: white;
+    img {
+      padding: 20px;
+      width: 200px;
+    }
+    p {
+      margin-top: -25px;
+      margin-right: 35px;
+      color: grey;
+      text-align: right;
+    }
+  }
+  #portfolio-nav {
+    background: #9ad3de;
+    position: fixed;
+    width: 240px;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    padding-bottom: 60px;
+    z-index: 999;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    border-right: solid seashell;
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+  #portfolio-content {
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    p {
+      color: black;
+    }
+    li {
+      color: black;
+    }
+    .owl-item {
+      //width: 25%;
+    }
+    .container {
+      margin: 0 auto;
+      width: 85%;
+    }
+  }
+  @media (min-width: $screen-xs-max) {
+    #portfolio-nav {
+      left: -240px;
+    }
+    #portfolio-content {
+      margin-left: 0px;
+    }
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-sm-max) {
+    #portfolio-nav {
+      left: 0px;
+    }
+    #portfolio-content {
+      margin-left: 240px;
+    }
+  }
+
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: $screen-md-max) {
+    #portfolio-content {
+      margin-left: 240px;
+    }
+  }
+}
+

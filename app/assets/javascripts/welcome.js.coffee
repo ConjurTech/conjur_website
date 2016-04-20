@@ -38,3 +38,11 @@ $(document).on 'ready page:load', ->
       text: error,
       confirmButtonText: 'OK'
     )
+
+  if $('#portfolio-page')[0]
+    $('#portfolio-slider').owlCarousel
+      center: true,
+      items: 1,
+      loop: true,
+      autoWidth: true,
+      margin:10

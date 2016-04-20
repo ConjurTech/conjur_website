@@ -1,0 +1,58 @@
+<div id="portfolio-page">
+  <div id="portfolio-nav">
+    <div id="portfolio-nav-header">
+      <%= image_tag 'logo_conjur.png', alt: 'Conjur' %>
+      <p>Projects</p>
+      <%= link_to '< Back to home', root_path %>
+    </div>
+    <ul>
+      <li>
+        <%= link_to portfolio_path do %>
+            <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to portfolio_path do %>
+            <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+
+  <div id="portfolio-content" class="text-center" id="team">
+    <div id="portfolio-slider">
+      <div>
+        <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+      </div>
+      <div>
+        <%= image_tag 'tuition_calendar.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+      </div>
+      <div>
+        <%= image_tag 'tuition_quiz.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+      </div>
+      <div>
+        <%= image_tag 'tuition_side_bar.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+      </div>
+      <div>
+        <%= image_tag 'tuition_statistics.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Quiz System / Class Attendance</h1>
+          <p><a href="www.shoheuken.com">www.shoheuken.com</a></p>
+          <p>A full featured system for a small tuition centre business</p>
+          <p>Features:</p>
+          <ul>
+            <li>Random Quiz Generation</li>
+            <li>Auto Mark System</li>
+            <li>Student Results Statistics</li>
+            <li>Attendance Tracking</li>
+            <li>Automatic Payment Calculation based on sessions attended</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbar-conjur-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a class="smoothscroll" href="#process">About</a></li>
-        <li><a class="smoothscroll" href="#">Our Works</a></li>
+        <li><a class="smoothscroll" href="#portfolio-section">Our Works</a></li>
         <li><a class="smoothscroll" href="#team">Our Team</a></li>
         <li><a class="smoothscroll" href="#contact">Contact</a></li>
       </ul>
@@ -135,6 +135,39 @@
             applications, superb loading speeds and industry best practices from day one with us.
           </p>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio-section">
+  <div class="container text-center" id="team">
+    <h1>Our Works</h1>
+    <div class="row">
+      <div class="col-md-3">
+        <%= link_to portfolio_path do %>
+            <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+        <% end %>
+      </div>
+      <div class="col-md-3 center-block">
+        <%= link_to portfolio_path do %>
+            <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+        <% end %>
+      </div>
+      <div class="col-md-3 center-block">
+        <%= link_to portfolio_path do %>
+            <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+        <% end %>
+      </div>
+      <div class="col-md-3 center-block">
+        <%= link_to portfolio_path do %>
+            <%= image_tag 'tuition_notifications.png', class: 'img-responsive center-block', alt: 'Shoheuken' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <%= link_to 'See all', portfolio_path %>
       </div>
     </div>
   </div>

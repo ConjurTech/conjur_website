@@ -7,6 +7,9 @@ class WelcomeController < ApplicationController
   def index
   end
 
+  def portfolio
+  end
+
   def contact
     unless [:name, :email, :message].all? {|s| params[s].present? }
       return render json: { error: 'Please fill up all fields.' }, status: :unprocessable_entity
