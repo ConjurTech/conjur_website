@@ -1,0 +1,20 @@
+{
+  "name": "Conjur Website",
+  "description": "Conjur's main website.",
+  "repository": "https://github.com/ConjurTech/conjur_website",
+  "scripts": {
+    "dokku": {
+      "predeploy": "bundle exec rake db:migrate"
+    }
+  },
+  "image": "gliderlabs/herokuish",
+  "addons": [
+    "dokku-postgres",
+    "dokku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
