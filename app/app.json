@@ -14,7 +14,8 @@
   ],
   "buildpacks": [
     {
-      "url": "heroku/ruby"
+      "url": "heroku/ruby",
+      "url": "heroku/nodejs"
     }
   ]
 }
