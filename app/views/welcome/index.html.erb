@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbar-conjur-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a class="smoothscroll" href="#process">About</a></li>
-        <li><a class="smoothscroll" href="#portfolio-section">Our Works</a></li>
+        <li><a class="smoothscroll" href="#portfolio">Our Works</a></li>
         <li><a class="smoothscroll" href="#team">Our Team</a></li>
         <li><a class="smoothscroll" href="#contact">Contact</a></li>
       </ul>
@@ -141,44 +141,69 @@
 </div>
 
 <div id="portfolio-section">
-  <div class="container text-center" id="team">
+  <div class="container text-center" id="portfolio">
     <h1>Our Works</h1>
     <div class="grid">
       <figure class="effect-zoe">
-        <%= link_to portfolio_path do %>
-            <%= image_tag 'tuition_notifications.png', class: 'center-block', alt: 'Shoheuken' %>
+        <%= link_to 'https://payboy.biz', target: '_blank' do %>
+            <%= image_tag 'portfolio_payboy.png', class: 'center-block', alt: 'Payboy' %>
         <% end %>
         <figcaption>
-          <h2>Shoheuken<span>.com</span></h2>
-          <p>Quiz / School Management System</p>
-          <a href="#">View more</a>
+          <h2>Payboy.biz</h2>
+          <p>Human Resource <br> Management System</p>
+          <%= link_to 'View more', 'https://payboy.biz', target: '_blank' %>
         </figcaption>
       </figure>
       <figure class="effect-zoe">
-        <%= link_to portfolio_path do %>
+        <%= link_to 'https://shoheuken.com', target: '_blank' do %>
             <%= image_tag 'tuition_notifications.png', class: 'center-block', alt: 'Shoheuken' %>
         <% end %>
         <figcaption>
-          <h2>Shoheuken<span>.com</span></h2>
+          <h2>Shoheuken.com</h2>
           <p>Quiz / School Management System</p>
-          <a href="#">View more</a>
+          <%= link_to 'View more', 'https://shoheuken.com', target: '_blank' %>
         </figcaption>
       </figure>
       <figure class="effect-zoe">
-        <%= link_to portfolio_path do %>
-            <%= image_tag 'tuition_notifications.png', class: 'center-block', alt: 'Shoheuken' %>
+        <%= link_to 'https://www.skylinetransports.com', target: '_blank' do %>
+            <%= image_tag 'portfolio_skyline.png', class: 'center-block', alt: 'Skyline Transports' %>
         <% end %>
         <figcaption>
-          <h2>Shoheuken<span>.com</span></h2>
-          <p>Quiz / School Management System</p>
-          <a href="#">View more</a>
+          <h2>Skyline Transp</h2>
+          <p>Limousine <br> Booking System</p>
+          <%= link_to 'View more', 'https://www.skylinetransports.com', target: '_blank' %>
         </figcaption>
       </figure>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <%= link_to 'See all', portfolio_path %>
-      </div>
+      <figure class="effect-zoe">
+        <%= link_to 'https://www.transcendtransports.com', target: '_blank' do %>
+            <%= image_tag 'portfolio_transcend.png', class: 'center-block', alt: 'Transcend Transports' %>
+        <% end %>
+        <figcaption>
+          <h2>Transcend Trans</h2>
+          <p>Limousine <br> Booking System</p>
+          <%= link_to 'View more', 'https://www.transcendtransports.com', target: '_blank' %>
+        </figcaption>
+      </figure>
+      <figure class="effect-zoe">
+        <%= link_to 'https://danityroses.com', target: '_blank' do %>
+            <%= image_tag 'portfolio_danityroses.png', class: 'center-block', alt: 'Danity Roses' %>
+        <% end %>
+        <figcaption>
+          <h2>Danity Roses</h2>
+          <p>Blogshop</p>
+          <%= link_to 'View more', 'https://danityroses.com', target: '_blank' %>
+        </figcaption>
+      </figure>
+      <figure class="effect-zoe">
+        <%= link_to 'https://therideidentity.com', target: '_blank' do %>
+            <%= image_tag 'portfolio_therideidentity.png', class: 'center-block', alt: 'The Ride Identity' %>
+        <% end %>
+        <figcaption>
+          <h2>The Ride Identity</h2>
+          <p>Blogshop</p>
+          <%= link_to 'View more', 'https://therideidentity.com', target: '_blank' %>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </div>
